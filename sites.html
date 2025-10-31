@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FIND AS — Sites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Small favicon (tabs) -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/logos/favicon-inset-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logos/favicon-inset-32.png">
+  <!-- iOS home screen -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/logos/favicon-inset-180.png">
+  <!-- PWA / Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/logos/favicon-inset-192.png">
+  <!-- Legacy/Windows -->
+  <link rel="icon" href="./images/logos/favicon-inset.ico">
+</head>
+<body>
+    <div class="page-blobs" aria-hidden="true"></div>
+  <!-- Sticky glass nav -->
+  <header id="nav" class="nav glass border-b">
+    <nav class="container nav__inner">
+      <a class="nav__brand" href="index.html">
+        <img
+          class="nav__logo"
+          src="./images/logos/favicon-inset-512.png"
+          alt=""                         
+          aria-hidden="true"
+          decoding="async"
+        />
+        <div class="nav__name">
+          <div class="brand-title">FIND AS</div>
+          <div class="brand-subtitle">Focused Imaging for Aortic Stenosis</div>
+        </div>
+      </a>
+      <ul class="nav__links">
+        <li><a class="link-btn" href="teams.html">Our Team</a></li>
+        <li><a class="link-btn" href="sites.html">Sites</a></li>
+        <li><a class="link-btn" href="https://tmed.cs.tufts.edu/tmed_v2.html" target="_blank" rel="noopener noreferrer">TMED</a></li>
+        <li><a class="link-btn" href="updates.html">Updates</a></li>
+        <li><a data-nav="connect" class="link-btn"  href="mailto:Lisa.Small@tuftsmedicine.org" type="button">Contact Us</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t">
+      <div class="container">
+        <div class="footer__cta">
+          <a
+            class="btn btn-nih"
+            href="https://reporter.nih.gov/search/aThBYiHFmUmC3meeXR3qXw/project-details/11208162"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="View NIH grant R01HL180937 details on NIH RePORTER"
+          >
+            Supported by NIH/ NHLBI <span class="grant">R01HL180937</span>
+            <svg class="ext" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="logo-grid">
+            <div class="logo-tile"><img src="https://placehold.co/160x40/png?text=TMC+Logo" alt="Supporting org 1" /></div>
+            <div class="logo-tile"><img src="https://placehold.co/160x40/png?text=PACE+Logo" alt="Supporting org 2" /></div>
+            <div class="logo-tile"><img src="https://placehold.co/160x40/png?text=CTSI+Logo" alt="Supporting org 3" /></div>
+            <div class="logo-tile"><img src="https://placehold.co/160x40/png?text=TuftsU+Logo" alt="Supporting org 4" /></div>
+          </div>
+        <div class="footer__copy">© <span id="year"></span> FIND AS • All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script defer>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
